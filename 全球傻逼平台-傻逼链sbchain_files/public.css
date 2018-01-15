@@ -1,0 +1,335 @@
+/* 字体设置 */
+h1, h2, h3, h4, h5, h6,a,p,span,body,header,footer{
+    font-family: "Helvetica Neue",Helvetica,"PingFang SC" , "Hiragino Sans GB","Microsoft YaHei","微软雅黑","Open Sans", Arial, sans-serif;
+}
+/*clear clearfix*/
+.clearfix:after {content:"\0020"; display: block; height: 0;clear: both; visibility: hidden; }
+.clearfix {zoom: 1;}
+/* header */
+.banner-language-type  {
+    display: none;
+    /*position: absolute;*/
+    /*left: 0;*/
+    /*top: 0;*/
+    z-index: 99;
+    padding: 5px 10px;
+    line-height: 20px;
+    border-radius: 2px;
+    background-color: #ffffff;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1), inset 0 -1px 0 0 #e6e6e6;
+}
+.banner-language-type .li-lan-flag {
+    /*padding: 0 10px;*/
+    width: 90px;
+    text-align: left;
+    line-height: 28px;
+    height: 28px;
+    float: left;
+    display: inline-block;
+    cursor: pointer;
+}
+.user-prompt-item{display: inline-block;}
+#header .user-prompt-item{ padding-left: 50px; cursor: pointer;position: relative;}
+#header .user-prompt-item .iconfont{font-size: 10px; }
+#header .user-prompt-item .coin-language{width: 25px;height: 16px; display: inline-block;  vertical-align: middle;margin-bottom: 2px;  }
+
+#header .banner-language-type a {color: #565c66;font-size: 12px;font-weight: 400;}
+/*#header .banner-language-type .li-lan-flag:hover {background:#f2f2f2;}*/
+#header .banner-language-type .li-lan-flag:hover a{color: #0096e0;}
+#header .header-language-trigger{display: block;height: 65px;}
+.navbar-nav>li.phone-language-trigger{display: none;}
+
+
+/* 团队照片 */
+.cnc-index .alexandria{height:60px; width:60px;margin:0 auto;}
+.cnc-index .alexandria .avatar-img{height:100%; width:100%;overflow:hidden;}
+
+/* 投资人 */
+.section-exchange{
+    /* padding-bottom: 60px; */
+    padding-bottom: 0;
+    border:none;}
+.containerex-team{width: 880px;margin: 0 auto;}
+.team-group-title{width: 100%;margin: 90px 0 52px 0; text-align: center;font-weight: 400;}
+.cnc-index .team-wrap{
+    display: inline-block;
+    width: 900px;
+    margin: 0 auto;
+    /*text-align: center;*/
+    display: -webkit-flex;  display: flex;
+    flex-wrap: wrap;  margin-left: -10px;
+    padding-left: 0;
+    padding-bottom: 50px;
+}
+.cnc-index .team-wrap .team-item{
+    width: 430px;
+    height: 170px;
+    overflow-x: hidden;
+    /*overflow-y: hidden;*/
+    overflow-y: auto;
+    background-color: #303050;border-radius: 4px;
+    padding: 30px;
+    color: #fff;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    display: -webkit-flex;  display: flex;
+    position: relative;
+    cursor: pointer;
+}
+.down-arrow-wrap{display: none;}
+
+
+
+/*滚动条样式*/
+.team-item::-webkit-scrollbar {/*滚动条整体样式*/
+    width: 0;     /*高宽分别对应横竖滚动条的尺寸*/
+    height:0;
+}
+.team-item::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    background: rgba(255,255,255,0.2);
+}
+.team-item::-webkit-scrollbar-track {/*滚动条里面轨道*/
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    border-radius: 0;
+    background: rgba(0,0,0,0.1);
+}
+
+.expert-team  .team-item::-webkit-scrollbar {/*滚动条整体样式*/
+    width: 0;     /*高宽分别对应横竖滚动条的尺寸*/
+    height: 0;
+}
+.expert-team  .team-item::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 5px  rgba(0,0,0,0.2);
+    background: rgba(255,255,255,0.2);
+}
+.expert-team  .team-item::-webkit-scrollbar-track {/*滚动条里面轨道*/
+    -webkit-box-shadow: inset 0 0 5px rgba(255,255,255,1);
+    border-radius: 0;
+    background: rgba(255,255,255,1);
+}
+
+.team-wrap .team-item .member-medal{position: absolute;right: 19px;top: -1px;}
+.member-detail-wrap{display: none}
+.member-detail{  padding-bottom: 10px;text-align: justify;}
+.team-wrap .member-avatar{width: 80px;height: 80px;flex-grow: 1;margin-right: 25px;}
+.team-wrap .member-avatar img{width: 80px;height: 80px;border-radius: 50%;}
+.team-wrap .member-info .member-position{font-weight: 400;font-size: 14px;color: #bec4c8;}
+
+.team-wrap .member-info{
+    flex-grow: 1;font-size: 13px;margin-top: 20px;
+    text-align: left;
+    min-width: 300px;
+}
+.team-wrap .member-name{font-size: 18px;font-weight: 400;}
+
+/* 视频 */
+.video-module{
+    width: 100%;
+    float: left;
+    color: #fff;
+    /*width: 1920px;*/
+    height: 380px;
+    background: #2f302e url(../img/video-bg.jpg) no-repeat center center;
+    background-size: cover;
+    display: none;
+}
+.video-module .video-content{
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    padding: 85px 20px 20px;
+}
+.video-module .video-module-title{
+    width: 100%;margin: 0 auto; text-align: center;font-weight: 400;
+}
+.video-module .video-des{font-size: 16px;margin-top: 28px;padding: 0 20px;}
+.video-module .video-start{width: 60px;height: 60px;margin: 0 auto;cursor: pointer;}
+.video-module .video-start:hover{opacity: 0.8;}
+.video-module .video-start img{width: 100%;height: 100%;}
+
+/* 路线图 */
+.development-step{
+    margin: 0 auto;padding: 50px 0;
+    width: 100%;
+    float: left;
+}
+.step-content{width: 1300px;margin: 0 auto;}
+.step-content .step-tit{font-size: 24px;font-weight: 400;text-align: center;padding-top: 30px;}
+.language-en .step-content .step-tit{padding-bottom: 30px;}
+.step-img-wrap {
+    width: 1330px;height: 330px;
+    background: #ffffff url(../img/step-v1.jpg) no-repeat center center;
+    background-size: cover;
+}
+.language-en .step-img-wrap {
+    width: 1330px;height: 330px;
+    background: #ffffff url(../img/step-v1-en.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.cnc-index .step_section .abs_container{
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    -webkit-box-pack: center;
+    -webkit-box-align: center
+}
+.step_description p{
+    margin: 10px 0;
+    text-align: center;
+}
+.step_description.more-text p{
+    /* text-indent:2em; */
+    text-align: justify;
+}
+
+@media(min-width:768px) {
+    .cnc-index .alexandria{height:100px; width:100px;margin:0 auto;}
+    .cnc-index .alexandria .avatar-img{height:100%; width:100%;overflow:hidden;}
+
+    /* 专家团 */
+    .cnc-index .expert-team .team-wrap{
+        margin-left: -45px;
+        width: 950px;
+    }
+    .cnc-index .expert-team .team-wrap .team-item{
+        width: 230px;
+        height: 270px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        background-color: #fff;
+        border-radius: 4px;
+        padding: 40px 22px;
+        color: #000;
+        margin-left: 70px;
+        margin-bottom: 10px;
+        /*display: -webkit-flex;  */
+        display: block;
+        position: relative;
+        cursor: pointer;
+        text-align: center;
+        -webkit-transform: translateY(-4px);
+        transform: translateY(-4px);
+        box-shadow: 0 20px 40px rgba(0,0,0,.12);
+    }
+    .expert-team .team-wrap .member-avatar{  margin: 0 auto;  }
+    .expert-team .team-wrap .member-info{  text-align: center;  min-width: auto;  }
+    .expert-team .team-wrap .member-name{  font-weight: 700;  }
+    .expert-team .team-wrap .member-info .member-position{  font-size: 16px;  }
+    .expert-team .member-detail{  color: #99a8bf;  font-size: 13px;text-align: justify;}
+    .language-en .expert-team .member-detail{  color: #99a8bf;  font-size: 13px;text-align: left;}
+}
+
+@media(max-width:768px) {
+    /* logo */
+    .navbar-brand img {
+        max-height: 40px;
+    }
+    .user-prompt-item{display: none;}
+    .navbar-nav>li.phone-language-trigger{display: block;}
+
+    /* team */
+    .containerex-team{  width: 100%;  padding: 0 10px;}
+    .team-group-title{margin: 20px 0 20px 0; }
+    .cnc-index .team-wrap{width: 100%;
+        display: -webkit-flex; /* Safari */
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+
+    .step_description p{
+        line-height: normal;
+        text-align: justify;
+    }
+    .cnc-index .team-wrap .team-item{
+        /*display: -webkit-flex;*/
+        /*display: flex;*/
+        width: 100%;height: auto;
+        display: block;
+        background-color: #303050;border-radius: 4px;
+        padding: 30px;color: #fff;
+        text-align: left;
+        overflow: inherit;
+        margin: 60px  0 10px;
+        position: relative;
+
+    }
+    .team-wrap .member-detail-wrap{
+        display: none;
+        /*width: 100%;*/
+        margin-top: 20px;
+    }
+    .member-detail{
+        display: block;
+        width: 100%;
+        height: auto;
+        font-size: 13px;
+        text-align: justify;
+    }
+    .team-wrap .member-info{width: 100%;}
+    .team-wrap .member-avatar{width: 80px;height: 80px;  position: absolute;  left: 50%;  margin-left: -40px;  top: -40px;  }
+    .team-wrap .member-avatar img{width: 80px;height: 80px;border-radius: 50%;}
+    .team-wrap .member-info{
+        display: block;
+        min-width: 200px;text-align: center;
+    }
+    .team-wrap .member-name{font-size: 18px;font-weight: 400;text-align: center;}
+    .team-wrap .member-position{font-size: 18px;font-weight: 400;text-align: center;}
+
+    /* 投资人 */
+    .down-arrow-wrap{width: 100%;text-align: center;display: inline-block;}
+    .down-arrow{
+        display: inline-block;
+        margin: 0 auto;
+        width: 20px; height: 20px;
+        border-bottom: 4px solid; border-left: 4px solid;
+        transform: rotate(315deg);
+    }
+
+    /* 视频 */
+    .cnc-index .video-module{
+        color: #fff;
+        width: 100%;
+        background-image: none;
+        background-color: #595959;
+    }
+    .video-module{padding: 15px 0;}
+    .video-module .video-content{
+        position: relative;
+        text-align: center;
+        padding-top: 30px;
+        table-layout:fixed;
+        word-break: break-all;
+        overflow:hidden;
+    }
+    .video-module .video-des{
+        font-size: 14px;
+    }
+
+    /* 路线图 */
+    .step-content{margin: 0 auto;width: 100%;}
+    .step-img-wrap {
+        width: 100%;
+        height: 680px;
+        background: #ffffff url(../img/step-v2.jpg) no-repeat center center;
+        background-size: cover;
+    }
+    .language-en .step-img-wrap {
+        width: 100%;
+        height: 680px;
+        background: #ffffff url(../img/step-v2-en.jpg) no-repeat center center;
+        background-size: cover;
+    }
+
+}
+
